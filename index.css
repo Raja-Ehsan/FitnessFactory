@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color:rgb(17, 17, 17) 
+  }
+
+  #nav-container{
+    background-color:rgb(17, 17, 17) ;
+    height:60px;
+    padding: 15px;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+  }
+  
+  #info-container{
+    position:absolute;
+    top: 30%;
+    left: 10%;
+  }
+  #info-container>button{
+    width: 0.2vw ;
+    background-color:rgb(17, 17, 17) ;
+    width: 12vw;
+    height: 4vw;
+    color: white;
+    border: none;
+    font-size: 1.6vw;
+    border-radius: 10px;
+            
+  }
+
+  #horizontal{
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  #img{
+    width: 50%;
+    margin: 5px;
+  }
+  #text{
+    color:white; 
+    margin: 5px;
+    width: 50%;
+    text-align: center;
+  }
+  .columns {
+    float: left;
+    width: 32%;
+    background-color: white;
+    border: 2px solid rgb(17, 17, 17);
+    margin: 5px;
+    box-shadow: 10px 10px 10px black;
+    border: none;
+  }
+
+  .price {
+    list-style-type: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+  }
+
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+
+  .price li {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .price .grey {
+    font-size: 20px;
+  }
+
+  .button {
+    background-color: #1b1b1b;
+    border: none;
+    width: 175px;
+    margin:auto;
+    cursor: pointer;
+    height: 60px;
+    padding: 0;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #horizontal {
+      flex-direction: column;
+      width: 80%;
+    }
+    #text {
+        width: 100%;
+      }
+    #img {
+        width: 100%;
+      }
+  }
+  @media only screen and (max-width: 1000px) {
+    #horizontal {
+        width: 90%;
+    }
+  }
